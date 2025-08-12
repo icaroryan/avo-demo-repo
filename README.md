@@ -1,6 +1,9 @@
-# Avo attach_scope repro (belongs_to selection in new view)
+# Avo attach_scope repro
 
 This demo app reproduces an error in Avo when using `attach_scope` on a `belongs_to` field while creating a record from a related resource. In this flow, Avo synthesizes a parent by assigning the grandparent through a collection association, which raises an error.
+
+<img width="1551" height="336" alt="image" src="https://github.com/user-attachments/assets/9fc10004-8720-42d3-b1a1-dc29433a238c" />
+"undefined method `each' for an instance of Buyer"
 
 ## Setup
 1. Populate .env file with the following:
@@ -29,3 +32,4 @@ This demo app reproduces an error in Avo when using `attach_scope` on a `belongs
 ## Notes
 - The issue reproduces when the new Workspace is created from the User context and the `organization` field has an `attach_scope`.
 - Removing `attach_scope` avoids the error.
+
