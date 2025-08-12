@@ -1,4 +1,4 @@
-# Avo attach_scope repro (belongs_to selection in new view)
+# Avo attach_scope repro
 
 This demo app reproduces an error in Avo when using `attach_scope` on a `belongs_to` field while creating a record from a related resource. In this flow, Avo synthesizes a parent by assigning the grandparent through a collection association, which raises an error.
 
