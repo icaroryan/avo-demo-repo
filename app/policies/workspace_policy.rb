@@ -1,0 +1,2 @@
+class WorkspacePolicy < ApplicationPolicy
+end
