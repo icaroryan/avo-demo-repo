@@ -29,3 +29,6 @@ This demo app reproduces an error in Avo when using `attach_scope` on a `belongs
 ## Notes
 - The issue reproduces when the new Workspace is created from the User context and the `organization` field has an `attach_scope`.
 - Removing `attach_scope` avoids the error.
+
+
+<img width="1604" height="319" alt="image" src="https://github.com/user-attachments/assets/69108612-347f-4b22-b384-c39262797779" />
